@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #004d66;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #004d66;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #004d66;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #004d66;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #003344;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Customer Registration</h2>
+        <form action="/car-service-system/CustomerRegister">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
